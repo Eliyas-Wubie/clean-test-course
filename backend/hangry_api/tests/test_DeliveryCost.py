@@ -30,8 +30,8 @@ def test_LittleItems():
     order = MockSet()
     order.add(MockModel(quantity=2))
     order.add(MockModel(quantity=2))
-    delivery_distance = 3
+    del_distance = 3
   #Act
-    cost = Delivery.calculate(order,delivery_distance)
+    cost = Delivery.calculate(order,del_distance)
   #Assert
     assert cost == 2.5
